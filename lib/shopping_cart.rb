@@ -12,7 +12,11 @@ class ShoppingCart
     @capacity.to_i
   end
 
-  def add_product(cart)
-    @cart << cart
+  def products
+    @cart
+  end
+
+  def add_product(product)
+    @cart << product
   end
 end
